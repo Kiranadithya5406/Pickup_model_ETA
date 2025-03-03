@@ -37,7 +37,7 @@ pickup_gps_lat = st.number_input("Pickup GPS Latitude", value=0.0)
 
 # Accept & Delivery Times
 accept_time = st.time_input("Accept Time", datetime.time(12, 0))
-pickup_time = st.time_input("Delivery Time", datetime.time(12, 30))
+pickup_time = st.time_input("Pickup Time", datetime.time(12, 30))
 
 # Feature Engineering
 accept_dt = datetime.datetime.combine(datetime.date.today(), accept_time)
