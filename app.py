@@ -84,4 +84,4 @@ final_input = np.hstack((input_data, pca_transformed))
 # Predict Button
 if st.button("Predict ETA"):
     prediction = model.predict(final_input)
-    st.success(f"Estimated Delivery Time: {prediction[0]:.2f} minutes")
+    st.success(f"ETA: {prediction[0]:.2f} minutes")
